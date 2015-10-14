@@ -1,0 +1,11 @@
+{
+  "name": "redfine",
+  "version": "1.0.0",
+  "dependencies": {
+    "curl-amd": "cujojs/curl"
+  },
+  "devDependencies": {
+    "lodash": "^3.10.1",
+    "requirejs-babel": "0.0.8"
+  }
+}

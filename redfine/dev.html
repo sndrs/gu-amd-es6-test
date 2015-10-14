@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var curl = {
+            apiName: 'require',
+            paths: {
+                es6: '/node_modules/requirejs-babel/es6.js',
+                babel: '/node_modules/requirejs-babel/babel-5.8.22.min.js'
+            }
+        };
+    </script>
+    <script src="/node_modules/curl-amd/dist/curl-with-js-and-domReady/curl.js"></script>
+    <script>
+    require(['es6!./js/snowflakes', 'domReady!'], function (map, reduce) {
+        console.log('inside require success callback');
+        console.log('map', map);
+        console.log('reduce', reduce);
+    }, function (e) {
+        console.log('inside require error callback');
+        console.error(e)
+    });
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
