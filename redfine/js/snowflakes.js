@@ -1,6 +1,6 @@
-import map from 'lodash/collection/map';
-import reduce from 'lodash/collection/reduce';
+
 
 console.log('inside snowflakes.js');
+let hello = 'hello';
 
-export {map, reduce};
+export default hello;
